@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of the page">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+    <header role="banner">
+        <h1>Welcome to My Website</h1>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>This is the home page. You can add more content here.</p>
+        </section>
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>This is a brief description of the website owner. You can add more content here.</p>
+    </section>
+    <section id="my-skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Git & GitHub</li>
+            <li>Responsive Design</li>
+            <li>RESTful APIs</li>
+            <li>Agile Methodologies</li>
+        </ul>
+    </section>
+    <section id="my-projects">
+        <article>
+            <h2>Article Title</h2>
+            <p>This is the content of the article. You can add more paragraphs, images, and other elements here.</p>
+            <img src="image.jpg" alt="Image Description" class="modal-image">
+        </article>
+    </section>
+    <!-- Modal structure -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+    <section id="contact-me">
+        <h2>Contact Me</h2>
+        <form role="form" action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    </main>
+    <footer role="contentinfo">
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
